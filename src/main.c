@@ -10,7 +10,7 @@
 
 int main()
 {
-	printf("Hello from C-Domino.\n");
+	printf("Hello from C-Domino.\n"); // test
 
 	return(0);
 }
