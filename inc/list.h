@@ -9,6 +9,7 @@
 
 // My Defines
 	// None for the moment.
+typedef struct DominoList DominoList;
 
 typedef struct DominoList
 {

@@ -14,6 +14,7 @@ typedef struct Player
 {
     char *          _name;
     Domino **       _dominos;
+    unsigned int    _nb_of_dominos;
     unsigned int    _nb_of_wins;
     unsigned int    _nb_of_defeats;
     
@@ -23,5 +24,6 @@ typedef struct Player
 void init               (Player * player, char * name, const unsigned int nbOfDominos);
 void print_player_hand  (const Player * const player);
 void play               (Player * player);
+void free_the_resources (Player * player, unsigned int playerHandSize);
 
 #endif // PLAYER_H
