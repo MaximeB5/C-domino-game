@@ -25,5 +25,6 @@ void init               (Player * player, char * name, const unsigned int nbOfDo
 void print_player_hand  (const Player * const player);
 void play               (Player * player);
 void free_the_resources (Player * player, unsigned int playerHandSize);
+void update_score       (Player * player, const unsigned int win, const unsigned int defeat);
 
 #endif // PLAYER_H

@@ -61,7 +61,19 @@ void print_player_hand(const Player * const player)
         printf("Domino [ %u / %u ]\n", player->_dominos[i]->_face_a, player->_dominos[i]->_face_b);
     }
 
-    printf("\n\t Player '%s' has %u Dominos.\n", player->_name, i );
+    printf("\n\t Player '%s' has %u Dominos.\n", player->_name, i);
+}
+
+
+/**
+ * @brief play method for the game loop
+ * TODO
+ * 
+ * @param player 
+ */
+void play(Player * player)
+{
+    // TODO
 }
 
 
@@ -94,4 +106,18 @@ void free_the_resources(Player * player, unsigned int playerHandSize)
     // Free the domino *
     free(player->_dominos);
     player->_dominos = NULL;
+}
+
+
+/**
+ * @brief increase the stats _nb_of_wins and _nb_of_defeats of the player
+ * 
+ * @param player 
+ * @param win 
+ * @param defeat 
+ */
+void update_score(Player * player, const unsigned int win, const unsigned int defeat)
+{
+    player->_nb_of_wins     += win;
+    player->_nb_of_defeats  += defeat;
 }
